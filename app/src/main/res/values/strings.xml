@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">dianGO POS</string>
+    
+    <!-- Títulos de tela -->
+    <string name="title_home">Início</string>
+    <string name="title_payment">Pagamento</string>
+    <string name="title_history">Histórico</string>
+    <string name="title_settings">Configurações</string>
+    
+    <!-- Métodos de pagamento -->
+    <string name="payment_credit_card">Cartão de Crédito</string>
+    <string name="payment_debit_card">Cartão de Débito</string>
+    <string name="payment_pix">PIX</string>
+    <string name="payment_voucher">Voucher</string>
+    <string name="payment_cash">Dinheiro</string>
+    
+    <!-- Status de pagamento -->
+    <string name="status_pending">Pendente</string>
+    <string name="status_processing">Processando</string>
+    <string name="status_approved">Aprovado</string>
+    <string name="status_declined">Recusado</string>
+    <string name="status_cancelled">Cancelado</string>
+    <string name="status_error">Erro</string>
+    
+    <!-- Botões -->
+    <string name="btn_process_payment">Processar Pagamento</string>
+    <string name="btn_cancel">Cancelar</string>
+    <string name="btn_retry">Tentar Novamente</string>
+    <string name="btn_ok">OK</string>
+    <string name="btn_clear">Limpar</string>
+    <string name="btn_export">Exportar</string>
+    <string name="btn_filter">Filtrar</string>
+    
+    <!-- Labels -->
+    <string name="label_amount">Valor</string>
+    <string name="label_payment_method">Método de Pagamento</string>
+    <string name="label_installments">Parcelas</string>
+    <string name="label_description">Descrição</string>
+    <string name="label_customer_name">Nome do Cliente</string>
+    <string name="label_customer_document">CPF/CNPJ</string>
+    
+    <!-- Placeholders -->
+    <string name="placeholder_amount">R$ 0,00</string>
+    <string name="placeholder_description">Descrição opcional</string>
+    <string name="placeholder_customer_name">Nome do cliente</string>
+    <string name="placeholder_customer_document">000.000.000-00</string>
+    
+    <!-- Mensagens -->
+    <string name="msg_payment_success">Pagamento aprovado com sucesso!</string>
+    <string name="msg_payment_error">Erro ao processar pagamento</string>
+    <string name="msg_connection_error">Erro de conexão</string>
+    <string name="msg_invalid_amount">Valor inválido</string>
+    <string name="msg_no_payments">Nenhuma transação encontrada</string>
+    
+    <!-- Dashboard -->
+    <string name="dashboard_total_sales">Vendas do Dia</string>
+    <string name="dashboard_transactions">Transações</string>
+    <string name="dashboard_recent_payments">Transações Recentes</string>
+    
+    <!-- Formato de moeda -->
+    <string name="currency_format">R$ %.2f</string>
+    
+    <!-- Menu -->
+    <string name="menu_sync">Sincronizar</string>
+    <string name="menu_settings">Configurações</string>
+    <string name="menu_about">Sobre</string>
+</resources>
