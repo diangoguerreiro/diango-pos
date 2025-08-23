@@ -1,0 +1,91 @@
+// .vscode/tasks.json
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Gradle: Build Debug",
+      "type": "shell",
+      "command": "./gradlew",
+      "args": ["assembleDebug"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": ["$gradle"]
+    },
+    {
+      "label": "Gradle: Build Release",
+      "type": "shell",
+      "command": "./gradlew",
+      "args": ["assembleRelease"],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "Gradle: Run Unit Tests",
+      "type": "shell",
+      "command": "./gradlew",
+      "args": ["testDebugUnitTest"],
+      "group": "test",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": ["$gradle"]
+    },
+    {
+      "label": "Gradle: Run Instrumented Tests",
+      "type": "shell",
+      "command": "./gradlew",
+      "args": ["connectedDebugAndroidTest"],
+      "group": "test",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "Gradle: Clean Project",
+      "type": "shell",
+      "command": "./gradlew",
+      "args": ["clean"],
+      "group": "build"
+    },
+    {
+      "label": "ADB: Install Debug APK",
+      "type": "shell",
+      "command": "adb",
+      "args": ["install", "-r", "app/build/outputs/apk/debug/app-debug.apk"],
+      "group": "build",
+      "dependsOn": "Gradle: Build Debug"
+    },
+    {
+      "label": "ADB: Start App",
+      "type": "shell",
+      "command": "adb",
+      "args": ["shell", "am", "start", "-n", "com.diango.pos/.presentation.ui.MainActivity"],
+      "group": "build"
+    },
+    {
+      "label": "Setup: Initialize Project",
+      "type": "shell",
+      "command": "${workspaceFolder}/scripts/setup.sh",
+      "group": "build"
+    }
+  ]
+}

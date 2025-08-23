@@ -1,0 +1,14 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Debug Unit Tests",
+      "request": "launch",
+      "mainClass": "org.junit.runner.JUnitCore",
+      "projectName": "app",
+      "args": ["com.diango.pos.AllUnitTests"],
+      "console": "internalConsole"
+    }
+  ]
+}
